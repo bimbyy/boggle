@@ -4,7 +4,7 @@ import os
 from datetime import datetime,timedelta
 
 app = Flask(__name__)
-app.secret_key = os.environ.get("SECRET_KEY", "your_secret_key")
+app.secret_key = os.environ.get("key", "your_key")
 
 # Define a route to initialize the session
 @app.route("/")
