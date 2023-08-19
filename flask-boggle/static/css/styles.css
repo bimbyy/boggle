@@ -1,0 +1,106 @@
+body {
+    background: linear-gradient(to bottom, #4ce7ec, #1167e7);
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    /* Updated styles for positioning and size */
+    margin-top: 20px; /* Add margin to move the board to the top */
+    width: 80%; /* Increase width for a slightly larger board */
+    max-width: none; /* Remove max-width to allow larger size */
+}
+.title-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.game-container {
+    text-align: center; /* Center content horizontally */
+    margin-top: 20px;
+}
+.board-container {
+    display: inline-block;
+    text-align: center; /* Center content horizontally */
+}
+.board-letter {
+    font-size: 24px;
+    text-align: center;
+    line-height: 2;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.guess-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.guess-input {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-button {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #0056b3;
+}
+
+.score {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.timer {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.stats {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.flash {
+    background-color: #ffc107;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 5px;
+}
